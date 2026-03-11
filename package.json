@@ -1,0 +1,51 @@
+{
+  "name": "@577-industries/hashchain-audit",
+  "version": "1.0.0",
+  "description": "Tamper-evident audit trail with SHA-256 hash chaining, Ed25519 signatures, and Merkle tree anchoring",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "audit",
+    "hash-chain",
+    "merkle-tree",
+    "ed25519",
+    "tamper-evident",
+    "cryptographic",
+    "ledger",
+    "integrity"
+  ],
+  "author": "577 Industries",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/577-industries/hashchain-audit"
+  },
+  "homepage": "https://www.577industries.com/forge",
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
