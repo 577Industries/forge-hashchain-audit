@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "hashchain-audit"
+title: "forge-hashchain-audit"
 authors:
   - name: "577 Industries"
-url: "https://github.com/577-industries/hashchain-audit"
+url: "https://github.com/577Industries/forge-hashchain-audit"
 license: Apache-2.0
 type: software
